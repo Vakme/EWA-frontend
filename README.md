@@ -1,6 +1,6 @@
 # ewa-frontend
 
-> Engineer WebApp MV Front Appgit
+> Engineer Thesis WebApp Front Part
 
 ## Build Setup
 
