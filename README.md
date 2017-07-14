@@ -26,5 +26,20 @@ npm run e2e
 # run all tests
 npm test
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# EWA FrontEnd Vue Components:
+*logged in User*
+- APP
+    - MAIN
+        - Home
+        - Login/Register
+        - SensorList
+        - SensorData
+        - *UserProfile*
+        - *Dashboard*
+    - SIDEBAR
+        - *LoggedInSidebar* - ADD: UserInfo, UserSummary
+    - ADDITIONAL
+        - *Toastr* 
+- ERROR
+    - NOT FOUND
+    - PERMISSION DENIED
