@@ -40,6 +40,6 @@ npm test
         - *LoggedInSidebar* - ADD: UserInfo, UserSummary
     - ADDITIONAL
         - *Toastr* 
-- ERROR
-    - NOT FOUND
-    - PERMISSION DENIED
+    - ERROR
+        - NOT FOUND
+        - PERMISSION DENIED
