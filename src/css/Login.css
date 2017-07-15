@@ -1,0 +1,49 @@
+.tiles {
+  margin: 10%;
+}
+.tiles__element {
+  padding: 20px 0;
+  height: 500px;
+}
+.tiles__container {
+  width: 100%;
+}
+.login__header {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+.login__group {
+  width: 100%;
+  background-color: #242424;
+  border: 1px solid #333333;
+  border-left: 0;
+  border-right: 0;
+}
+.login__label {
+  width: 12%;
+  line-height: 30px;
+  padding-left: 10px;
+}
+.login__icon:before {
+  margin: 0;
+}
+.login__input {
+  width: 87%;
+  height: 30px;
+  line-height: 30px;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+.login__input:focus {
+  border: none;
+  outline: none;
+  color: #9DE658;
+}
+.login__button {
+  margin-top: 40px;
+}
+.login__forgotten {
+  font-size: 0.8rem;
+  margin-left: 20px;
+}

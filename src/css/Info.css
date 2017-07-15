@@ -1,0 +1,21 @@
+.tiles {
+  margin: 10%;
+}
+.tiles__element {
+  height: 500px;
+  width: 700px;
+  align-items: flex-start;
+}
+.tiles__container {
+  height: 80%;
+}
+.tiles__content {
+  width: 100%;
+  overflow-y: scroll;
+  height: 100%;
+  text-align: left;
+  padding: 10px;
+}
+.info__header {
+  font-size: 2rem;
+}

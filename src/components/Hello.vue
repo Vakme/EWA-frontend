@@ -1,25 +1,27 @@
 <template>
   <div class="hello">
-    <div class="tiles">
+      <router-link to="/info">
       <div class="tiles__element"  v-on:click="clickedSensors = !clickedSensors">
         <div class="tiles__container">
-          <span class="tiles__icon flaticon-stats"></span>
-          <div class="tiles__header">Sensory</div>
+          <span class="tiles__icon flaticon-info"></span>
+          <div class="tiles__header">O projekcie</div>
           <div class="tiles__loader" v-bind:class="{ 'tiles__loader--clicked': clickedSensors }">
             <span class="flaticon-loading tiles__loader__icon" v-bind:class="{ 'tiles__loader__icon--clicked': clickedSensors }"></span>
           </div>
         </div>
       </div>
+      </router-link>
+      <router-link to="/login">
       <div class="tiles__element"  v-on:click="clickedLogin = !clickedLogin">
         <div class="tiles__container">
-          <span class="tiles__icon flaticon-security"></span>
+          <span class="tiles__icon flaticon-sign-in"></span>
           <div class="tiles__header">Logowanie</div>
           <div class="tiles__loader" v-bind:class="{ 'tiles__loader--clicked': clickedLogin }">
             <span class="flaticon-loading tiles__loader__icon" v-bind:class="{ 'tiles__loader__icon--clicked': clickedLogin }"></span>
           </div>
         </div>
       </div>
-    </div>
+      </router-link>
   </div>
 </template>
 

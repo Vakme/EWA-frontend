@@ -1,0 +1,39 @@
+.tiles {
+  margin: 5%;
+  width: 15%;
+  &__element {
+    height: 500px;
+    align-items: flex-start;
+    padding: 20px;
+    overflow: hidden;
+  }
+  &__content {
+    width: 90%;
+    height: 90%;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.main-sidebar {
+  &__header {
+    font-size: 2rem;
+  }
+  &__userinfo {
+    margin-bottom: 30px;
+  }
+  &__data {
+    height: 90%;
+    overflow: hidden;
+  }
+  &__notif {
+
+    animation: notificationMove 10s linear 0s normal infinite none running;
+  }
+}
+
+
+@keyframes notificationMove {
+  from { transform: translateY(320px); }
+  to { transform: translateY(-520px);}
+}

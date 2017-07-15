@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <div class="tiles">
+      <router-view name="sidebar"></router-view>
+      <router-view name="main"></router-view>
+    </div>
   </div>
 </template>
 

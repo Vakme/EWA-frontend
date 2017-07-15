@@ -13,3 +13,14 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+
+/*
+router.beforeEach(function (transition) {
+if (transition.to.auth) {
+    transition.redirect('/login')
+  } else {
+   transition.next()
+  }
+  TODO: FIX loading!
+})
+*/
