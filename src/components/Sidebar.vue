@@ -5,18 +5,24 @@
           <div class="tiles__content">
             <div class="main-sidebar__userinfo">
               <div class="main-sidebar__header">
-                Profile
+                Profil
               </div>
               Lorem ipsum
             </div>
             <div class="main-sidebar__header">
-              Notifications
+              Komunikaty
             </div>
             <div class="main-sidebar__data">
-              <p class="main-sidebar__notif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
+              <div class="main-sidebar__notif">
+                <p class="main-sidebar__notif__elem" v-for="item in sensorMock">
+              <b>Pomiar z dnia {{item.time.split("T")[0]}}</b> <br>
+                  Czas: {{item.time.split("T")[1].split(".")[0]}} <br>
+              Temperatura: {{item.temperature.toFixed(2)}}°C <br>
+              Wilgotność: {{item.humidity.toFixed(2)}}%
+                </p>
+              </div>
 
-              <p class="main-sidebar__notif">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. </p>
-            </div>
+              </div>
             </div>
         </div>
       </div>
