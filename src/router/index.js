@@ -5,6 +5,7 @@ import Login from '@/components/Login'
 import Info from '@/components/Info'
 import Dashboard from '@/components/Dashboard'
 import Sidebar from '@/components/Sidebar'
+import Sensor from '@/components/Sensor'
 
 Vue.use(Router)
 
@@ -44,7 +45,7 @@ export default new Router({
       path: '/sensor/:id',
       name: 'Sensor',
       components: {
-        main: Info,
+        main: Sensor,
         sidebar: Sidebar
       }
     }
