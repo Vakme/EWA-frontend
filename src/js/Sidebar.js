@@ -1,7 +1,8 @@
 import xhr from 'xhr'
 import { store } from './store';
 
-let apiURL = '/static/aQ5Qjwdy.json';
+let apiIP = 'localhost';
+
 
 export default {
   name: 'main-sidebar',
@@ -17,19 +18,19 @@ export default {
 
   methods: {
     fetchData: function (obj) {
-      xhr(apiURL, function (err, resp, body) {
-        if (resp.statusCode == 200) {
+      xhr({
+        body: {login: true},
+        method: "GET",
+        uri: "http://"+ apiIP +":3000/sidebar",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }, function (err, resp, body) {
+        console.log(resp);
+        if(err)
+          console.log(err);
+        else {
           obj.sensorMock = JSON.parse(body);
-          for(let i in obj.sensorMock) {
-            store.commit('add', {
-              id: i,
-              date: obj.sensorMock[i].time,
-              temperature: obj.sensorMock[i].temperature,
-              crit_temperature: 30,
-              humidity: obj.sensorMock[i].humidity,
-              crit_humidity: 50
-            });
-          }
         }
       });
     }

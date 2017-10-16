@@ -6,6 +6,7 @@ import Info from '@/components/Info'
 import Dashboard from '@/components/Dashboard'
 import Sidebar from '@/components/Sidebar'
 import Sensor from '@/components/Sensor'
+import AddSensor from '@/components/AddSensor'
 
 Vue.use(Router)
 
@@ -46,6 +47,14 @@ export default new Router({
       name: 'Sensor',
       components: {
         main: Sensor,
+        sidebar: Sidebar
+      }
+    },
+    {
+      path: '/addSensor',
+      name: 'AddSensor',
+      components: {
+        main: AddSensor,
         sidebar: Sidebar
       }
     }

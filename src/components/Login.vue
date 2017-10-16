@@ -4,7 +4,7 @@
         <div class="tiles__container">
           <div  v-if="login" class="tiles__content">
             <div class="login__header">Logowanie</div>
-            <form action="" method="post" class="login__form" id="LoginForm"> <!--TODO action-->
+            <form class="login__form" id="LoginForm"> <!--TODO action-->  <!--v-on:submit.prevent="greet" action="#" method="post" -->
               <div class="login__group">
                 <label for="Username" class="login__label"><span class="login__icon flaticon-user-1" aria-label="Username"></span></label>
                 <input id="Username" type="text" class="login__input" placeholder="Nazwa użytkownika">
@@ -13,7 +13,7 @@
                 <label for="Password" class="login__label"><span class="login__icon flaticon-security" aria-label="Password"></span></label>
                 <input id="Password" type="password" class="login__input" placeholder="Hasło">
               </div>
-              <button class="login__button" v-on:click="clickedLoginButton = !clickedLoginButton">Zaloguj się</button>
+            <router-link :to="'dashboard'"><button class="login__button" >Zaloguj się</button></router-link>
               <span class="login__forgotten">Zapomniałeś hasła?</span>
             </form>
             <button class="login__button" v-on:click="login=false">Zarejestruj się</button>

@@ -3,9 +3,12 @@
       <div class="tiles__element">
         <div class="tiles__container">
           <div class="tiles__content">
-            {{sensorMock}}
+            <commit-chart class="sensor__chart" :data="chartData" :options="chartOptions"></commit-chart>
           </div>
         </div>
+        <router-link to="/dashboard">
+          <button class="info__button" >Powrót</button>
+        </router-link>
       </div>
   </div>
 </template>

@@ -3,7 +3,7 @@
   width: 300px;
   margin-bottom: 50px;
   text-align: left;
-  padding: 15px;
+  padding: 10px;
   align-items: flex-start;
 }
 .tiles__container {
@@ -18,7 +18,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 80vh;
   border-bottom: 2px #5DBE00 solid;
   -webkit-box-shadow: inset -10px -9px 30px -11px rgba(0, 0, 0, 0.21);
@@ -31,13 +31,24 @@
   justify-content: space-between;
   width: calc(90%);
 }
+.dashboard__measures {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
 .dashboard__measureValues,
 .dashboard__measureNames {
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
+.dashboard__measureValues div,
+.dashboard__measureNames div {
+  margin: 0 5% 0 0;
+}
 .dashboard__value {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .dashboard--error {
   color: #ab1a0e;

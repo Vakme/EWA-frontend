@@ -1,0 +1,28 @@
+.tiles__element {
+  margin-left: 5%;
+  width: 80vw;
+  height: 90vh;
+  flex-direction: column;
+}
+.tiles__container {
+  overflow: visible;
+  height: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+.tiles__content {
+  height: 80vh;
+  width: 100%;
+}
+.sensor__measure {
+  display: none;
+  width: 100%;
+  padding: 0 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px #45b47f solid;
+}
+.sensor__chart {
+  height: 80vh;
+  width: 50vw;
+}

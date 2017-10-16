@@ -1,0 +1,64 @@
+.tiles__element {
+  margin-left: 5%;
+  width: 90%;
+  height: 80vh;
+  flex-direction: column;
+}
+.tiles__container {
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+.tiles__header {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+.add-sensor {
+  width: 90%;
+}
+.form__content {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form__group {
+  text-align: left;
+  width: 45%;
+  background-color: #242424;
+  border: 1px solid #333333;
+  border-left: 0;
+  border-right: 0;
+  margin: 10px;
+}
+.form__label {
+  width: 12%;
+  line-height: 30px;
+  padding-left: 10px;
+}
+.form__icon:before {
+  margin: 0;
+}
+.form__input {
+  width: auto;
+  height: 30px;
+  line-height: 30px;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+.form__input:focus {
+  border: none;
+  outline: none;
+  color: #9DE658;
+}
+.form__button {
+  margin-top: 40px;
+}
+.measure__header {
+  font-size: 1.5rem;
+}
+.measure__group {
+  overflow-y: auto;
+  height: 40vh;
+}

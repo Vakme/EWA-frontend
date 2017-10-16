@@ -1,7 +1,7 @@
 import { store } from './store';
 import xhr from 'xhr'
 
-let apiURL = '/static/aQ5Qjwdy.json';
+let apiIP = 'localhost';
 
 export default {
   name: 'dashboard',
@@ -21,19 +21,19 @@ export default {
 
   methods: {
     fetchData: function (obj) {
-      xhr(apiURL, function (err, resp, body) {
-        if (resp.statusCode == 200) {
-          let sensorArr = JSON.parse(body);
-          for(let i in sensorArr) {
-            obj.sensors.push({
-              id: i,
-              date: sensorArr[i].time,
-              temperature: sensorArr[i].temperature,
-              crit_temperature: 30,
-              humidity: sensorArr[i].humidity,
-              crit_humidity: 50
-            });
-          }
+      xhr({
+        body: {login: true},
+        method: "GET",
+        uri: "http://"+ apiIP +":3000/sensors",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }, function (err, resp, body) {
+        console.log(resp);
+        if(err)
+          console.log(err);
+        else {
+          obj.sensors = JSON.parse(body);
         }
       });
     },

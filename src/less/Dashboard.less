@@ -4,7 +4,7 @@
     width: 300px;
     margin-bottom: 50px;
     text-align: left;
-    padding: 15px;
+    padding: 10px;
     align-items: flex-start;
   }
   &__container {
@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 80vh;
   border-bottom: 2px #5DBE00 solid;
 
@@ -37,12 +37,23 @@
     width: calc(100% - 10px);
   }
 
-  &__measureValues, &__measureNames {
+  &__measures {
+
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__measureValues, &__measureNames {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    div {
+      margin: 0 5% 0 0;
+    }
   }
   &__value {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   &--error {
     color: #ab1a0e;

@@ -22,7 +22,8 @@
   font-size: 2rem;
 }
 .main-sidebar__userinfo {
-  margin-bottom: 30px;
+  margin: 30px 0;
+  text-align: center;
 }
 .main-sidebar__data {
   height: 90%;
@@ -34,6 +35,9 @@
 .main-sidebar__notif__elem {
   padding-bottom: 15px;
   border-bottom: 1px #45b47f solid;
+}
+.info__button {
+  margin: 10px 0;
 }
 @keyframes notificationMove {
   from {
